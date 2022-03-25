@@ -28,13 +28,13 @@ int main()
         {
             ch = ch + key;
         }
-        if (ch > 'z')
-        {
-            ch = ch - 'z' + 'z' - 1;
+            if (ch > 'z')
+            {
+                ch = ch - 'z' + 'z' - 1;
+            }
+            plaintext[i] = ch;
         }
-        plaintext[i] = ch;
-    }
-    
+
     printf("Encrypted message: %s", plaintext);
     return 0;
 }

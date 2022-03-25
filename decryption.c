@@ -26,12 +26,12 @@ int main()
         {
             ch = ch - key;
         }
-        if (ch < 'a')
-        {
-            ch = ch + 'z' - 'a' + 1;
+            if (ch < 'a')
+            {
+                ch = ch + 'z' - 'a' + 1;
+            }
+            plaintext[i] = ch;
         }
-        plaintext[i] = ch;
-    }
     
     printf("Decrypted message: %s", plaintext);
     return 0;
